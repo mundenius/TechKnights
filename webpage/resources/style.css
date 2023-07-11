@@ -1,6 +1,47 @@
-body{
-    background-color:rgb(2,14,38,0.8);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.montserrat {
+font-family: 'Montserrat', sans-serif;
 }
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(rgb(2,14,38,0.8),rgb(169,169,169,0.8));
+}
+
+/* CLASES AUXILIARES*/
+
+.font-bold {
+    font-weight: bold;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/* NAVBAR */
+
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+  }
+
+
+/* BOTON COTIZACION*/
+.btn-custom {
+    background: linear-gradient(45deg, rgb(75, 222, 202), rgb(27, 211, 237));
+    color: rgb(0, 0, 0, 0.8);
+    border: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-custom:hover {
+    transform: scale(1.1);
+  }
+
+
 
   
 /* Media Queries */
@@ -16,3 +57,4 @@ body{
   }  
 
 /* */
+
