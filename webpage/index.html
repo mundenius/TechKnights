@@ -11,6 +11,8 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 
 
   <!-- JQUERY -->
@@ -20,55 +22,193 @@
   <link rel="icon" type="image/x-icon" href="resources/img/favicon_logoai/favicon.ico">
 
   <link rel="stylesheet" href="resources/style.css">
+  <script defer src="resources/app.js"></script>
   <title>TechKnights</title>
 </head>
 
 <body class="montserrat">
-  <!-- NAVBAR -->
-  <header>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar">
-        <div class="col-md-3">
-          <span><img class="img-fluid" src="resources/img/TK Main Logo TP 800x600.png"></span>
+  <div class="container-fluid index">
+    <!-- HEADER & NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-navbar px-0">
+      <div class="container-fluid align-items-center px-0">
+        <div class="logo">
+          <a class="navbar-brand " href="#">
+            <img class="img-fluid d-none d-md-block" src="resources/img/TK Main Logo TP 2400x1800 cropped.png" alt="Logo">
+          </a>
         </div>
-        <div class="col-md-6 ">
-          <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center order-md-3" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Servicios</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Packs Diseño Y Mantenimiento Web</a></li>
+                <li><a class="dropdown-item" href="#">Diseño Web</a></li>
+                <li><a class="dropdown-item" href="#">Mantenimiento Web</a></li>
+                <li><a class="dropdown-item" href="#">Servicio Técnico</a></li>
+                <li><a class="dropdown-item" href="#">Emergencias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-3 px-0">
-          <span><button type="button" class="btn btn-lg btn-custom font-bold">Cotiza Tu Proyecto</button></span>
+        <div class="col-md-3 px-0 order-md-2">
+          <button type="button" class="btn btn-lg btn-custom font-bold">Cotiza Tu Proyecto</button>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- FIRST IMPRESSION -->
+    <div class="container-fluid first-impression">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="h1 lead font-bold" style="font-size: x-large;">Descubre el poder de un sitio web personalizado que dejará una impresión duradera en tus visitantes.</h1>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead font-bold">
+            TechKnights: donde tus ideas se convierten en realidad. Nuestro equipo altamente comprometido y enfocado en la personalización creará una presencia web única y atractiva que destaque entre la multitud.
+          </p>
+        </div>
+      </div>
+
     </div>
-  </header>
 
 
+  
+    <div class="row hidden index">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"></div>
+      <div class="col-md-2"></div>
+    </div>
+  
 
 
+  <!-- Footer -->
+  <footer class="text-center text-dark bottom">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
 
 
+</div>
   <script src="resources/main.js"></script>
 </body>
 
