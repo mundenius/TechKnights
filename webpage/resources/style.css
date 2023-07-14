@@ -1,8 +1,15 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+
+@font-face {
+  font-family: "Primal";
+  src: url("fonts/Primal.otf") format("opentype");
+}
+
+/* BODY */
 
 body {
   min-height: 100vh;
@@ -39,11 +46,11 @@ h1.catch{
   margin-right: 10%;
   font-size: 3rem;
   line-height: 145%;
-  background: linear-gradient(to right, rgb(163, 157, 157), rgb(169, 169, 169, 0.8));
+  background: linear-gradient(to right, rgba(220, 220, 220), rgb(169, 169, 169));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 5px 4px 3px rgba(2, 14, 38, 0.1);
+  /* text-shadow: 5px 4px 3px rgba(2, 14, 38, 0.1); */
 }
 
 p.index{
@@ -100,10 +107,17 @@ a.dropdown-item{
   background-color: rgb(169, 169, 169, 0.1);
 }
 
+/* Logo Index */
+
+p.primal-logo{
+  font-family: "Primal", Arial, sans-serif;
+  font-size: 2.5rem;
+  width: 100%;
+}
 
 /* ANIMACIONES INTERSECTION OBSERVER */
 
-.hidden.index {
+.hidden {
   opacity: 0;
   transform: translateY(-100%);
   transition: all 1s;
@@ -117,28 +131,35 @@ a.dropdown-item{
 /* Media Queries */
 
 /* menor a MD
-Ipad Mini 
 */
 @media (max-width: 767.98px) {
 
-#navbarOffcanvas {
-  width: 74%;
-  right: 0;
-  left: auto;
-}
+  h1.catch {
+    font-size: 2rem;
+  }
 
-div.container-fluid.nav{
-  position: relative;
-  justify-content: end;
-}
+  p.index{
+    font-size: 1rem;
+  }
+  
+  
+  /* navbar */
+  div.container-fluid.nav{
+    position: relative;
+    justify-content: end;
+  }
+  
+  #navbarOffcanvas {
+    width: 74%;
+    right: 0;
+    left: auto;
+  }
 
-li.dropdown{
-  align-items: center;
-  justify-content: center;
-}
+  li.dropdown{
+    align-items: center;
+    justify-content: center;
+  }
 
-
-/* navbar */
   ul.navbar-nav {
     align-items: center;
     font-weight: bold;
@@ -156,5 +177,3 @@ li.dropdown{
     line-height: 8vh;
   }
 }
-
-/* */
