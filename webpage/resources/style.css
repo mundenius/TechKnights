@@ -30,14 +30,18 @@ body {
   justify-content: center;
 }
 
-.align-items-center {
+.align-content-center {
   align-items: center;
+}
+
+.single-line {
+  white-space: nowrap;
 }
 
 /* INDEX */
 
 div.container-fluid.index {
-  min-height: 100%;
+  overflow-x: hidden;
 }
 
 h1.catch{
@@ -46,6 +50,7 @@ h1.catch{
   margin-right: 10%;
   font-size: 3rem;
   line-height: 145%;
+  letter-spacing: 8px;
   background: linear-gradient(to right, rgba(220, 220, 220), rgb(169, 169, 169));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -59,6 +64,12 @@ p.index{
   margin-left: 10%;
   margin-right: 10%;
   line-height: 135%;
+  letter-spacing: 5px;
+  background: linear-gradient(to right, rgba(220, 220, 220), rgb(169, 169, 169));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
 }
 
 
@@ -79,7 +90,11 @@ ul.dropdown-menu.show{
 
 a.dropdown-item{
   color: white;
+  background: local;
 }
+
+/* OFFCANVAS */
+
 
 
 /* BOTON COTIZACION*/
@@ -98,7 +113,11 @@ a.dropdown-item{
 }
 
 .btn-custom:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.btn-custom-lg:hover {
+  transform: scale(1.05);
 }
 
 .card.index {
@@ -115,15 +134,24 @@ p.primal-logo{
   width: 100%;
 }
 
+
+/* FOOTER */
+
+h6 {
+  letter-spacing: 5px;
+  line-height: 130%;
+  white-space: nowrap;
+}
+
 /* ANIMACIONES INTERSECTION OBSERVER */
 
-.hidden {
+.a-hidden {
   opacity: 0;
   transform: translateY(-100%);
   transition: all 1s;
 }
 
-.show {
+.a-show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -136,6 +164,9 @@ p.primal-logo{
 
   h1.catch {
     font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   p.index{
@@ -149,12 +180,27 @@ p.primal-logo{
     justify-content: end;
   }
   
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .offcanvas-title{
+    font-size: 1.5rem;
+  }
+
   #navbarOffcanvas {
     width: 74%;
     right: 0;
     left: auto;
   }
 
+
+  li.nav-item{
+    color: rgb(0, 0, 0, 0.8);
+  }
   li.dropdown{
     align-items: center;
     justify-content: center;
@@ -162,18 +208,47 @@ p.primal-logo{
 
   ul.navbar-nav {
     align-items: center;
-    font-weight: bold;
-    font-size: larger;
+    font-size: 1rem;
     line-height: 10vh;
+    letter-spacing: 5px;
     padding: 10%;
     
   }
 
   a.dropdown-item{
-    color: rgb(0, 0, 0);
-    align-items: center;
-    font-weight: bold;
-    font-size: larger;
-    line-height: 8vh;
+    justify-content: center;
+    white-space: pre-line;
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 0.75rem;
+    line-height: 5vh;
+    transition: transform 0.2s ease;
+  }
+
+  a.dropdown-item:hover{
+    transform: scale(1.02);
+    background-color: rgb(169, 169, 169,0.2);
+  }
+
+  .navbar-nav .nav-link {
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.02);
+    background-color: rgb(169, 169, 169,0.2);
+  }
+
+  .nav-item.shift-down-p {
+    margin-top: 57vh; /* Ajusta el valor según sea necesario */
+  }
+
+  .nav-item.shift-down-c {
+    margin-top: 0rem; /* Ajusta el valor según sea necesario */
+  }
+
+  /* footer  */
+
+  h6{
+    white-space: normal;
   }
 }

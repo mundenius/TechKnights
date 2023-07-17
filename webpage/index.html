@@ -10,10 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-
+  <script src="https://kit.fontawesome.com/77f8d6d2d7.js" crossorigin="anonymous"></script>
 
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -32,8 +30,9 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-navbar px-0">
       <div class="container-fluid nav px-0 justify-content-center align-items-center">
         <div class="logo col-2 col-md-3 px-0 mx-0 py-0">
-          <a class="navbar-brand mx-0 px-0" href="index.html">    
-            <img class="img-fluid lg d-none d-md-block" src="resources/img/logos/TK Main Logo TP 2400x1800 cropped.png" alt="TechKnights">
+          <a class="navbar-brand mx-0 px-0" href="index.html">
+            <img class="img-fluid lg d-none d-md-block" src="resources/img/logos/TK Main Logo TP 2400x1800 cropped.png"
+              alt="TechKnights">
             <p class="primal-logo d-block d-md-none m-0">TK</p>
           </a>
         </div>
@@ -44,15 +43,15 @@
           </button>
 
         </div>
-        
+
         <div class="collapse navbar-collapse justify-content-center order-md-2" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle ms-md-auto" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Servicios</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle ms-md-auto text-center" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Packs Diseño Y Mantenimiento Web</a></li>
                 <li><a class="dropdown-item" href="#">Diseño Web</a></li>
@@ -71,14 +70,14 @@
         </div>
         <!-- BOTON COTIZACION -->
         <div class="btn d-md-block d-none  pe-md-0 order-2 order-md-3">
-          <button type="button" class="btn btn-lg btn-custom-lg font-bold align-items-center">Cotiza Tu Proyecto</button>
+          <a type="button" class="btn btn-lg btn-custom-lg font-bold align-items-center" href="#">Cotiza Tu Proyecto</a>
         </div>
         <div class="btn d-md-none pe-md-0 px-3 order-2 order-md-3">
-          <button type="button" class="btn btn btn-custom font-bold align-items-center">Cotiza Tu Proyecto</button>
+          <a type="button" class="btn btn btn-custom font-bold align-items-center" href="">Cotiza Tu Proyecto</a>
         </div>
       </div>
     </nav>
-    <!-- OFFCANVAS MENU -->
+    <!-- OFFCANVAS MENU 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title">Menú</h5>
@@ -89,7 +88,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item active dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle ms-md-auto" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Servicios</a>
             <ul class="dropdown-menu">
@@ -100,7 +99,7 @@
               <li><a class="dropdown-item" href="#">Emergencias</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-collapse">
             <a class="nav-link active" href="#">Portafolio</a>
           </li>
           <li class="nav-item">
@@ -108,190 +107,198 @@
           </li>
         </ul>
       </div>
-    </div>
-    <!-- FIRST IMPRESSION -->
-    <div class="container-fluid first-impression pt-md-0 pt-4">
+    </div> -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown servicios">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+          data-bs-target="#dropdownMenu" aria-expanded="false">Servicios</a>
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a class="dropdown-item" href="#">Packs Diseño Y Mantenimiento Web</a></li>
+          <li><a class="dropdown-item" href="#">Diseño Web</a></li>
+          <li><a class="dropdown-item" href="#">Mantenimiento Web</a></li>
+          <li><a class="dropdown-item" href="#">Servicio Técnico</a></li>
+          <li><a class="dropdown-item" href="#">Emergencias</a></li>
+        </ul>
+      </li>
+      <li class="nav-item portafolio">
+        <a class="nav-link active" href="#">Portafolio</a>
+      </li>
+      <li class="nav-item contacto">
+        <a class="nav-link active" href="#">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-      <div class="row hidden ">
+    
+    <!-- FIRST IMPRESSION -->
+    <div class="container-fluid first-impression pt-md-2 pt-4">
+
+      <div class="row a-hidden mb-4">
         <div class="col-md-12">
-          <h1 class="catch font-bold text-center">Descubre el poder de un sitio web personalizado que dejará una impresión duradera en tus visitantes.</h1>
+          <h1 class="catch font-bold text-center">Descubre el poder de un sitio web personalizado que dejará una
+            impresión duradera en tus visitantes.</h1>
         </div>
       </div>
-    
-      <div class="row mt-4">
-        <div class="col-md-8 mb-5 mb-md-0 hidden">
-          <p class="index lead font-bold">
-            TechKnights: donde tus ideas se convierten en realidad. Nuestro equipo altamente comprometido y enfocado en la personalización creará una presencia web única y atractiva que destaque entre la multitud.
+
+      <div class="row a-hidden">
+        <div class="col-md-8 mb-5 mb-md-0 a-hidden">
+          <p class="index lead font-bold text-center" style="line-height: 180%;">
+            <span style="font-family: Primal;">TechKnights</span>: donde tus ideas se convierten en realidad.
+          </p>
+          <p class="index lead font-bold text-center" style="line-height: 180%;">Nuestro equipo comprometido y enfocado
+            en la personalización; creará una presencia web única y atractiva que destaque entre la multitud.
           </p>
         </div>
         <!-- CARD WITH CAROUSEL -->
-        <div class="col-md-4 hidden">
-          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
+        <div class="col-md-4 d-flex align-items-center">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="resources/img/portafolio-index/mcsquad-lg-1.png" class="d-block w-100" alt="MCSQUAD">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>MCSquad</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+                <img src="resources/img/portafolio-index/mcsquad-lg-1.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="resources/img/portafolio-index/mcsquad-lg-2.png" class="d-block w-100" alt="MCSQUAD">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>MCSquad</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+                <img src="resources//img/portafolio-index/mcsquad-lg-2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="resources/img/portafolio-index/isoquality-sm.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
 
         </div>
       </div>
 
+      <!-- Footer -->
+      <div class="row a-hidden">
+
+        <footer class="text-center text-dark bottom">
+          <!-- Grid container -->
+          <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-3">
+              <!-- Grid row-->
+              <div class="row text-center justify-content-center pt-5">
+                <!-- Grid column -->
+                <div class="col-md-6 me-0 me-md-5 me-lg-0">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="btn text-white">Packs Diseño Web y Mantención</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col">
+                  <h6 class="text-uppercase font-weight-bold ms-5">
+                    <a href="#!" class="btn text-white">Portafolio</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="btn text-white">Servicios</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="btn text-white">Sobre Nosotros</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="btn text-white">Contacto</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <!-- Section: Text -->
+            <section class="mb-1">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <p>
+                    ¿Listo para marcar la diferencia en línea? Permítenos crear un sitio web cautivador que te ayude a
+                    alcanzar tus metas y a dejar una huella digital inolvidable.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-3">
+              <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+              </a>
+            </section>
+            <!-- Section: Social -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3">
+            © 2023 Copyright:
+            <a class="text-white" href="#">TechKnights SPA</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+
+      </div>
+      <!-- Footer -->
+
+
+
     </div>
-
-
-  
-    <div class="row hidden index">
-      <div class="col-md-2"></div>
-      <div class="col-md-8"></div>
-      <div class="col-md-2"></div>
-    </div>
-  
-
-
-  <!-- Footer -->
-  <footer class="text-center text-dark bottom">
-    <!-- Grid container -->
-    <div class="container">
-      <!-- Section: Links -->
-      <section class="mt-5">
-        <!-- Grid row-->
-        <div class="row text-center d-flex justify-content-center pt-5">
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Sobre Nosotros</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Packs Diseño Web y Mantención</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Portafolio</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Servicios</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Contacto</a>
-            </h6>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row-->
-      </section>
-      <!-- Section: Links -->
-
-      <hr class="my-5" />
-
-      <!-- Section: Text -->
-      <section class="mb-1">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat quaerat voluptatibus placeat nam,
-              commodi optio pariatur est quia magnam eum harum corrupti
-              dicta, aliquam sequi voluptate quas.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Social -->
-      <section class="text-center mb-5">
-        <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-github"></i>
-        </a>
-      </section>
-      <!-- Section: Social -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         >
-      © 2023 Copyright:
-      <a class="text-white" href="#"
-         >TechKnights SPA</a
-        >
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  
-
-
-</div>
-  <script src="resources/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
 
 </body>
 
